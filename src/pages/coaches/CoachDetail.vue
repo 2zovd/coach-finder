@@ -9,13 +9,19 @@
     <base-card>
       <header>
         <h2>Interested? Reach out now!</h2>
-        <base-button :to="contactLink">Contact</base-button>
+        <base-button link :to="contactLink">Contact</base-button>
       </header>
+      <router-view></router-view>
     </base-card>
   </section>
   <section>
     <base-card>
-      <base-badge v-for="area in areas" :key="area" :type="area" :title="area"></base-badge>
+      <base-badge
+        v-for="area in areas"
+        :key="area"
+        :type="area"
+        :title="area"
+      ></base-badge>
       <p>{{ description }}</p>
     </base-card>
   </section>
