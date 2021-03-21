@@ -92,10 +92,6 @@ export default {
         val: '',
         isValid: true
       },
-      career: {
-        val: '',
-        isValid: true
-      },
       description: {
         val: '',
         isValid: true
@@ -125,10 +121,6 @@ export default {
         this.lastName.isValid = false
         this.formIsValid = false
       }
-      if(this.career.val === '') {
-        this.career.isValid = false
-        this.formIsValid = false
-      }
       if(this.description.val === '') {
         this.description.isValid = false
         this.formIsValid = false
@@ -148,7 +140,6 @@ export default {
       const formData = {
         firstName: this.firstName.val,
         lastName: this.lastName.val,
-        career: this.career.val,
         description: this.description.val,
         rate: this.rate.val,
         areas: this.areas.val
